@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import {
-    Twitter,
     Linkedin,
     Github,
     Instagram,
@@ -83,7 +82,7 @@ export default function FooterContact() {
     <h3 className="text-red-400 uppercase text-sm tracking-wide mb-2">Let's Talk</h3>
     <h2 className="text-3xl font-bold mb-4">Keep In Touch</h2>
     <p className="text-gray-300 mb-6">
-      Whether you have a question, want to work together, or just want to say hi — I’ll try my best to get back to you!
+      Whether you have a question, want to work together, or just want to say hi — I will try my best to get back to you!
     </p>
 
     {/* Working Hours */}
