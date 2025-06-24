@@ -1,5 +1,5 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// import Image from "next/image";
+// import styles from "./page.module.css";
 import Hero from "./components/herosection";
 import About from "./components/about";
 import Desc from "./components/description";
