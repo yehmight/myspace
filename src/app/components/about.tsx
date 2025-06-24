@@ -1,6 +1,6 @@
-// components/Hero.jsx
+// components/About.jsx
 
-import { Facebook, Twitter, Dribbble, Youtube } from 'lucide-react';
+// import { Facebook, Twitter, Dribbble, Youtube } from 'lucide-react';
 
 export default function About() {
   return (
@@ -30,12 +30,12 @@ export default function About() {
 
             {/* Description */}
             <p className="text-gray-300 leading-relaxed">
-            I'm a Fullstack Developer with a passion for crafting high-quality, user-focused web applications.
+            I am a Fullstack Developer with a passion for crafting high-quality, user-focused web applications.
              With experience in both frontend and backend development, I specialize in building scalable digital 
              products that bridge the gap between elegant user interfaces and robust server-side functionality.
 
             On the frontend, I work extensively with React and Next.js (13+), combined with Tailwind CSS to create clean, 
-            responsive, and modern UI experiences. I’ve built complex interfaces including e-commerce marketplaces, property 
+            responsive, and modern UI experiences. I have built complex interfaces including e-commerce marketplaces, property 
             listing platforms (similar to Zillow), and responsive dashboards for monitoring app performance and user data.
 
             On the backend, I develop efficient APIs and services using Node.js, and I leverage Firebase for real-time databases, 
