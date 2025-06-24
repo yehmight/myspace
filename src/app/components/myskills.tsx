@@ -1,4 +1,4 @@
-import { Progress } from 'flowbite-react';
+import from 'flowbite-react';
 
 export default function Skills() {
   return (
