@@ -1,4 +1,7 @@
-import from 'flowbite-react';
+'use client';
+
+import Image from 'next/image';
+import 'flowbite-react'; // Assuming you’ll later use Flowbite components
 
 export default function Skills() {
   return (
@@ -57,9 +60,11 @@ export default function Skills() {
 
         {/* Right Column (Image) */}
         <div className="flex justify-center">
-          <img
-            src="/sweet.avif" // Replace with your own image in /public
+          <Image
+            src="/sweet.avif"
             alt="Photographer"
+            width={400}
+            height={500}
             className="rounded-lg w-full max-w-sm sm:max-w-md object-cover shadow-lg"
           />
         </div>
