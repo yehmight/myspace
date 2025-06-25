@@ -1,6 +1,7 @@
 'use client';
 
-import {  Instagram, Linkedin } from 'lucide-react';
+import Image from 'next/image';
+import { Instagram, Linkedin } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -9,10 +10,8 @@ export default function Hero() {
         
         {/* Left Column */}
         <div className="flex gap-6">
-          {/* Vertical Accent Line */}
           <div className="w-2 bg-[#E86A64] rounded-full"></div>
 
-          {/* Content */}
           <div className="space-y-6">
             <p className="uppercase tracking-wide text-sm text-[#FFFFFF] font-medium">
               Fullstack Developer
@@ -20,20 +19,22 @@ export default function Hero() {
 
             <h1 className="text-4xl md:text-5xl font-bold">ADEYEMI OKESANYA</h1>
 
-            {/* Social Icons with Links */}
+            {/* Social Icons */}
             <div className="flex gap-4 text-white text-lg">
-              <a href="https://www.linkedin.com/in/adeyemi-okesanya-b708b82aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/adeyemi-okesanya-b708b82aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="hover:text-[#E86A64] cursor-pointer" />
               </a>
-              {/* <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">
-                <Twitter className="hover:text-[#E86A64] cursor-pointer" />
-              </a> */}
-              <a href="https://www.instagram.com/dominion_dad?igsh=MWcyaGh5dTVnNnV2OQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/dominion_dad?igsh=MWcyaGh5dTVnNnV2OQ%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Instagram className="hover:text-[#E86A64] cursor-pointer" />
               </a>
-              {/* <a href="https://youtube.com/@your-youtube" target="_blank" rel="noopener noreferrer">
-                <Youtube className="hover:text-[#E86A64] cursor-pointer" />
-              </a> */}
             </div>
 
             {/* Description */}
@@ -41,7 +42,7 @@ export default function Hero() {
               Full Stack Developer with a strong focus on building scalable web applications. I work across the entire development stack—React, Next.js, Node.js, and databases—to deliver modern, performance-driven solutions.
             </p>
 
-            {/* View Portfolio Button */}
+            {/* Button */}
             <a
               href="/projects"
               target="_blank"
@@ -53,12 +54,15 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Column (Image) */}
+        {/* Right Column (Optimized Image) */}
         <div className="flex justify-center">
-          <img
+          <Image
             src="/about.jpg"
             alt="Portrait"
-            className="rounded-lg w-full max-w-md object-cover shadow-lg"
+            width={400}
+            height={500}
+            className="rounded-lg object-cover shadow-lg"
+            priority
           />
         </div>
       </div>
