@@ -1,5 +1,7 @@
 // app/components/Gallery.tsx
+
 import React from 'react';
+import Image from 'next/image';
 
 interface GalleryProps {
   images: string[];
@@ -13,20 +15,34 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
       {/* First column with one large image */}
-      <div>
-        <img src={images[0]} alt="Image 1" className="w-full h-full object-cover" />
+      <div className="relative w-full h-[400px]">
+        <Image
+          src={images[0]}
+          alt="Image 1"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Second column with two stacked images */}
       <div className="flex flex-col">
-        <img src={images[1]} alt="Image 2" className="w-full object-cover" />
-        <img src={images[2]} alt="Image 3" className="w-full object-cover" />
+        <div className="relative w-full h-[200px]">
+          <Image src={images[1]} alt="Image 2" fill className="object-cover" />
+        </div>
+        <div className="relative w-full h-[200px]">
+          <Image src={images[2]} alt="Image 3" fill className="object-cover" />
+        </div>
       </div>
 
       {/* Third column with two stacked images */}
       <div className="flex flex-col">
-        <img src={images[3]} alt="Image 4" className="w-full object-cover" />
-        <img src={images[4]} alt="Image 5" className="w-full object-cover" />
+        <div className="relative w-full h-[200px]">
+          <Image src={images[3]} alt="Image 4" fill className="object-cover" />
+        </div>
+        <div className="relative w-full h-[200px]">
+          <Image src={images[4]} alt="Image 5" fill className="object-cover" />
+        </div>
       </div>
     </div>
   );
